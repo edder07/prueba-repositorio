@@ -143,3 +143,4 @@ C:\Users\Roy\Documents\GitHub\prueba-repositorio\WindowsApplication7\WindowsAppl
 C:\Users\Roy\Documents\GitHub\prueba-repositorio\WindowsApplication7\WindowsApplication7\obj\x86\Debug\WindowsApplication1.matricula.resources
 C:\Users\Roy\Documents\GitHub\prueba-repositorio\WindowsApplication7\WindowsApplication7\obj\x86\Debug\WindowsApplication1.Resources.resources
 C:\Users\Roy\Documents\GitHub\prueba-repositorio\WindowsApplication7\WindowsApplication7\obj\x86\Debug\matriculas_prueba_servidor.vbproj.GenerateResource.Cache
+C:\Users\Roy\Documents\GitHub\prueba-repositorio\WindowsApplication7\WindowsApplication7\obj\x86\Debug\WindowsApplication1.SeleccionarAñoCurso.resources

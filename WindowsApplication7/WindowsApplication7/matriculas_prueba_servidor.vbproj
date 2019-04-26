@@ -131,6 +131,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="SeleccionarAñoCurso.Designer.vb">
+      <DependentUpon>SeleccionarAñoCurso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionarAñoCurso.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -153,6 +159,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionarAñoCurso.resx">
+      <DependentUpon>SeleccionarAñoCurso.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

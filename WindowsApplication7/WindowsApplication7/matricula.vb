@@ -1206,17 +1206,21 @@ Public Class matricula
         End Try
     End Sub
     Private Sub Button12_Click(sender As System.Object, e As System.EventArgs) Handles Button12.Click
-        TabControl1.SelectedTab = TabControl1.TabPages.Item(5)
-        primero_activas()
-        segundo_activas()
-        tercero_activas()
-        cuarto_activas()
-        quinto_activas()
-        sexto_activas()
-        septimo_activas()
-        octavo_activas()
-        kinder_activas()
-        prekinder_activas()
+        'TabControl1.SelectedTab = TabControl1.TabPages.Item(5)
+        'primero_activas()
+        'segundo_activas()
+        'tercero_activas()
+        'cuarto_activas()
+        'quinto_activas()
+        'sexto_activas()
+        'septimo_activas()
+        'octavo_activas()
+        'kinder_activas()
+        'prekinder_activas()
+
+        SeleccionarAñoCurso.Show()
+        Me.Enabled = False
+
 
     End Sub
     Sub mostraralumnocursosegundo()
@@ -2280,4 +2284,5 @@ Public Class matricula
         TextBox37.Text = UCase(TextBox37.Text)
         TextBox37.SelectionStart = TextBox37.TextLength + 1
     End Sub
+
 End Class
