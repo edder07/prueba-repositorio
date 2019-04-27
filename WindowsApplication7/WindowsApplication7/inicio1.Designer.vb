@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class inicio
+Partial Class inicio1
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,13 +22,17 @@ Partial Class inicio
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(inicio))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(inicio1))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtuser = New System.Windows.Forms.TextBox()
         Me.txtpass = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -53,7 +57,7 @@ Partial Class inicio
         Me.txtuser.Name = "txtuser"
         Me.txtuser.Size = New System.Drawing.Size(286, 26)
         Me.txtuser.TabIndex = 4
-        Me.txtuser.Text = "NOMBRE DE USUARIO"
+        Me.txtuser.Text = "USUARIO"
         '
         'txtpass
         '
@@ -82,15 +86,35 @@ Partial Class inicio
         Me.Button1.Text = "INGRESAR"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(301, 379)
+        Me.Panel1.TabIndex = 9
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources._1
+        Me.PictureBox1.Location = New System.Drawing.Point(66, 76)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(168, 194)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'Button2
         '
-        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
+        Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(80, 79)
+        Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.icon
+        Me.Button2.Location = New System.Drawing.Point(839, 0)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(209, 156)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(34, 26)
+        Me.Button2.TabIndex = 10
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
@@ -104,22 +128,26 @@ Partial Class inicio
         Me.Button3.TabIndex = 8
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'inicio
+        'inicio1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.HotTrack
         Me.ClientSize = New System.Drawing.Size(876, 379)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txtpass)
         Me.Controls.Add(Me.txtuser)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "inicio"
+        Me.Name = "inicio1"
+        Me.Opacity = 0.96R
         Me.Text = "Form1"
+        Me.Panel1.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -128,7 +156,9 @@ Partial Class inicio
     Friend WithEvents txtuser As System.Windows.Forms.TextBox
     Friend WithEvents txtpass As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 
 End Class

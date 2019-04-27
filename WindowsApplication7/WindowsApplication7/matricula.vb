@@ -165,7 +165,7 @@ Public Class matricula
 
     Private Sub Button11_Click(sender As System.Object, e As System.EventArgs) Handles Button11.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(1)
-        TextBox26.Text = inicio.nomUsuario
+        TextBox26.Text = inicio1.nomUsuario
         conector.Close()
 
         Button14.Visible = False
@@ -280,8 +280,8 @@ Public Class matricula
 
     End Sub
 
-    Private Sub Button14_Click(sender As System.Object, e As System.EventArgs) Handles Button14.Click
-        TextBox26.Text = inicio.nomUsuario
+    Private Sub Button14_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button14.Click
+        TextBox26.Text = inicio1.nomUsuario
         TabControl1.SelectedTab = TabControl1.TabPages.Item(2)
         Button3.Visible = False
         conector.Close()
@@ -294,11 +294,11 @@ Public Class matricula
             Button3.Visible = False
         End If
 
-       
+
     End Sub
 
-    Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
-        TextBox26.Text = inicio.nomUsuario
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        TextBox26.Text = inicio1.nomUsuario
         TabControl1.SelectedTab = TabControl1.TabPages.Item(3)
         Button65.Visible = False
         Button9.Visible = True
@@ -317,13 +317,13 @@ Public Class matricula
         End If
     End Sub
 
-    Private Sub Button7_Click(sender As System.Object, e As System.EventArgs)
+    Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         conector.Close()
 
 
     End Sub
 
-    Private Sub Button6_Click(sender As System.Object, e As System.EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
         Button3.Visible = True
         TabControl1.SelectedTab = TabControl1.TabPages.Item(2)
         conector.Close()
@@ -337,7 +337,7 @@ Public Class matricula
         End If
     End Sub
 
-    Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Button14.Visible = True
         TabControl1.SelectedTab = TabControl1.TabPages.Item(1)
         conector.Close()
@@ -351,7 +351,7 @@ Public Class matricula
 
     End Sub
 
-    Private Sub Button1_Click_3(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click_3(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(0)
         conector.Close()
         matriculas_activas()
@@ -359,8 +359,8 @@ Public Class matricula
 
     End Sub
 
-  
-    Private Sub Button16_Click(sender As System.Object, e As System.EventArgs) Handles Button16.Click
+
+    Private Sub Button16_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button16.Click
 
         conector.Close()
         conector.Close()
@@ -368,7 +368,7 @@ Public Class matricula
 
 
         id_curso()
-      
+
         rut_completo_buscar = TextBox4.Text
         fecha = calendarn.SelectionRange.End
         TextBox28.Text = TextBox4.Text
@@ -409,7 +409,7 @@ Public Class matricula
                 TextBox2.Enabled = False
                 TextBox3.Enabled = False
                 TextBox4.Enabled = False
-               
+
 
                 ComboBox6.Enabled = False
                 calendarn.Enabled = False
@@ -439,7 +439,7 @@ Public Class matricula
                     TextBox2.Enabled = False
                     TextBox3.Enabled = False
                     TextBox4.Enabled = False
-                   
+
 
                     ComboBox6.Enabled = False
                     calendarn.Enabled = False
@@ -457,11 +457,11 @@ Public Class matricula
 
     End Sub
 
-    Private Sub TabPage2_Click(sender As System.Object, e As System.EventArgs) Handles TabPage2.Click
+    Private Sub TabPage2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TabPage2.Click
         conector.Close()
     End Sub
 
-    Private Sub Button5_Click(sender As System.Object, e As System.EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
 
         conector.Close()
 
@@ -552,7 +552,7 @@ Public Class matricula
         End If
     End Sub
 
-    Private Sub Button9_Click(sender As System.Object, e As System.EventArgs) Handles Button9.Click
+    Private Sub Button9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button9.Click
         id_curso()
         conector.Close()
         fecha_ma = calen.SelectionRange.End
@@ -663,7 +663,7 @@ Public Class matricula
 
 
 
-    Private Sub PictureBox1_Click(sender As System.Object, e As System.EventArgs) Handles PictureBox1.Click
+    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
         conector.Close()
         conector.Close()
         conector.Close()
@@ -676,21 +676,21 @@ Public Class matricula
         End If
     End Sub
 
-   
 
-    Private Sub TabPage4_Click(sender As System.Object, e As System.EventArgs) Handles TabPage4.Click
+
+    Private Sub TabPage4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TabPage4.Click
         conector.Close()
         conector.Close()
 
     End Sub
 
-    Private Sub Button17_Click(sender As System.Object, e As System.EventArgs) Handles Button17.Click
+    Private Sub Button17_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button17.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(1)
         conector.Close()
         conector.Close()
     End Sub
 
-    Private Sub Button18_Click(sender As System.Object, e As System.EventArgs) Handles Button18.Click
+    Private Sub Button18_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button18.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(2)
         conector.Close()
         Button3.Visible = False
@@ -698,17 +698,17 @@ Public Class matricula
         Button5.Visible = True
 
     End Sub
-  
+
     Private Sub Textbox9_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox9.KeyPress
         e.Handled = ValidaChar(e.KeyChar)
     End Sub
 
-    Private Sub Button26_Click(sender As System.Object, e As System.EventArgs) Handles Button26.Click
+    Private Sub Button26_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button26.Click
 
         TextBox2.Enabled = True
         TextBox3.Enabled = True
         TextBox4.Enabled = True
-        
+
 
 
         ComboBox6.Enabled = True
@@ -738,7 +738,7 @@ Public Class matricula
 
         End If
     End Sub
-    Private Sub Button15_Click(sender As System.Object, e As System.EventArgs) Handles Button15.Click
+    Private Sub Button15_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button15.Click
         conector.Close()
         id_curso()
         fecha = calendarn.SelectionRange.End
@@ -768,7 +768,7 @@ Public Class matricula
                 TextBox2.Enabled = False
                 TextBox3.Enabled = False
                 TextBox4.Enabled = False
-              
+
 
                 ComboBox6.Enabled = False
                 calendarn.Enabled = False
@@ -785,7 +785,7 @@ Public Class matricula
         End If
     End Sub
 
-    Private Sub Button27_Click(sender As System.Object, e As System.EventArgs) Handles Button27.Click
+    Private Sub Button27_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button27.Click
         TextBox6.Enabled = True
         TextBox7.Enabled = True
         TextBox8.Enabled = True
@@ -796,9 +796,9 @@ Public Class matricula
         conector.Close()
     End Sub
 
-    
 
-    Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Button4.Click
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
         conector.Close()
         rut_completo_apoderado = TextBox9.Text
         If (TextBox6.Text = "" Or TextBox7.Text = "" Or TextBox8.Text = "" Or TextBox9.Text = "") Then
@@ -830,7 +830,7 @@ Public Class matricula
         End If
     End Sub
 
-    Private Sub Button8_Click(sender As System.Object, e As System.EventArgs) Handles Button8.Click
+    Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
         id_curso()
         conector.Close()
         If (TextBox5.Text = "" Or TextBox6.Text = "" Or TextBox7.Text = "" Or TextBox8.Text = "" Or CheckBox8.Checked = True And TextBox37.Text = "" Or CheckBox1.Checked = True And TextBox23.Text = "" Or CheckBox4.Checked = True And TextBox22.Text = "" Or CheckBox6.Checked = True And TextBox19.Text = "" Or calen.SelectionRange.Start.Year > Year(Now) Or calen.SelectionRange.Start.Month > Month(Now)) Then
@@ -897,7 +897,7 @@ Public Class matricula
         End If
     End Sub
 
-    Private Sub Button28_Click(sender As System.Object, e As System.EventArgs) Handles Button28.Click
+    Private Sub Button28_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button28.Click
         conector.Close()
 
         campo_no()
@@ -936,7 +936,7 @@ Public Class matricula
         CheckBox7.Enabled = True
         CheckBox8.Enabled = True
 
-       
+
         calen.Enabled = True
 
         Button9.Visible = False
@@ -1205,7 +1205,7 @@ Public Class matricula
             MsgBox("error fun" & vbCrLf & ex.Message)
         End Try
     End Sub
-    Private Sub Button12_Click(sender As System.Object, e As System.EventArgs) Handles Button12.Click
+    Private Sub Button12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button12.Click
         'TabControl1.SelectedTab = TabControl1.TabPages.Item(5)
         'primero_activas()
         'segundo_activas()
@@ -1337,73 +1337,73 @@ Public Class matricula
 
     End Sub
 
-   
-    Private Sub Button29_Click(sender As System.Object, e As System.EventArgs) Handles Button29.Click
+
+    Private Sub Button29_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button29.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(6)
         mostraralumnocursoprimero()
         conector.Close()
     End Sub
 
-    Private Sub Button30_Click(sender As System.Object, e As System.EventArgs) Handles Button30.Click
+    Private Sub Button30_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button30.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(7)
         mostraralumnocursosegundo()
         conector.Close()
     End Sub
 
-    Private Sub Button33_Click(sender As System.Object, e As System.EventArgs) Handles Button33.Click
+    Private Sub Button33_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button33.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(8)
         mostraralumnocursotercero()
         conector.Close()
     End Sub
 
-    Private Sub Button34_Click(sender As System.Object, e As System.EventArgs) Handles Button34.Click
+    Private Sub Button34_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button34.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(9)
         mostraralumnocursocuarto()
         conector.Close()
     End Sub
 
-    Private Sub Button31_Click(sender As System.Object, e As System.EventArgs) Handles Button31.Click
+    Private Sub Button31_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button31.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(10)
         mostraralumnocursoquinto()
         conector.Close()
     End Sub
 
-    Private Sub Button32_Click(sender As System.Object, e As System.EventArgs) Handles Button32.Click
+    Private Sub Button32_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button32.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(11)
         mostraralumnocursosexto()
         conector.Close()
     End Sub
 
-    Private Sub Button35_Click(sender As System.Object, e As System.EventArgs) Handles Button35.Click
+    Private Sub Button35_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button35.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(12)
         mostraralumnocursoseptimo()
         conector.Close()
     End Sub
 
-    Private Sub Button36_Click(sender As System.Object, e As System.EventArgs) Handles Button36.Click
+    Private Sub Button36_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button36.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(13)
         mostraralumnocursooctavo()
         conector.Close()
     End Sub
 
-    Private Sub Button37_Click(sender As System.Object, e As System.EventArgs) Handles Button37.Click
+    Private Sub Button37_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button37.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(14)
         mostraralumnocursokinder()
         conector.Close()
     End Sub
 
-    Private Sub Button38_Click(sender As System.Object, e As System.EventArgs) Handles Button38.Click
+    Private Sub Button38_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button38.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(15)
         mostraralumnocursoprekinder()
         conector.Close()
     End Sub
 
-    Private Sub Button39_Click(sender As System.Object, e As System.EventArgs) Handles Button39.Click
+    Private Sub Button39_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button39.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(0)
         conector.Close()
     End Sub
 
-    Private Sub Button41_Click(sender As System.Object, e As System.EventArgs) Handles Button41.Click
+    Private Sub Button41_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button41.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(5)
         primero_activas()
         segundo_activas()
@@ -1419,7 +1419,7 @@ Public Class matricula
         conector.Close()
     End Sub
 
-    Private Sub Button40_Click(sender As System.Object, e As System.EventArgs) Handles Button40.Click
+    Private Sub Button40_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button40.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(5)
         conector.Close()
         primero_activas()
@@ -1435,7 +1435,7 @@ Public Class matricula
 
     End Sub
 
-    Private Sub Button42_Click(sender As System.Object, e As System.EventArgs) Handles Button42.Click
+    Private Sub Button42_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button42.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(5)
         conector.Close()
         primero_activas()
@@ -1451,7 +1451,7 @@ Public Class matricula
 
     End Sub
 
-    Private Sub Button43_Click(sender As System.Object, e As System.EventArgs) Handles Button43.Click
+    Private Sub Button43_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button43.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(5)
         conector.Close()
         primero_activas()
@@ -1467,7 +1467,7 @@ Public Class matricula
 
     End Sub
 
-    Private Sub Button44_Click(sender As System.Object, e As System.EventArgs) Handles Button44.Click
+    Private Sub Button44_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button44.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(5)
         conector.Close()
         primero_activas()
@@ -1483,7 +1483,7 @@ Public Class matricula
 
     End Sub
 
-    Private Sub Button45_Click(sender As System.Object, e As System.EventArgs) Handles Button45.Click
+    Private Sub Button45_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button45.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(5)
         conector.Close()
         primero_activas()
@@ -1499,7 +1499,7 @@ Public Class matricula
 
     End Sub
 
-    Private Sub Button46_Click(sender As System.Object, e As System.EventArgs) Handles Button46.Click
+    Private Sub Button46_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button46.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(5)
         conector.Close()
         primero_activas()
@@ -1515,7 +1515,7 @@ Public Class matricula
 
     End Sub
 
-    Private Sub Button47_Click(sender As System.Object, e As System.EventArgs) Handles Button47.Click
+    Private Sub Button47_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button47.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(5)
         conector.Close()
         primero_activas()
@@ -1531,7 +1531,7 @@ Public Class matricula
 
     End Sub
 
-    Private Sub Button48_Click(sender As System.Object, e As System.EventArgs) Handles Button48.Click
+    Private Sub Button48_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button48.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(5)
         conector.Close()
         primero_activas()
@@ -1547,7 +1547,7 @@ Public Class matricula
 
     End Sub
 
-    Private Sub Button49_Click(sender As System.Object, e As System.EventArgs) Handles Button49.Click
+    Private Sub Button49_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button49.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(5)
         conector.Close()
         primero_activas()
@@ -1563,7 +1563,7 @@ Public Class matricula
 
     End Sub
 
-    Private Sub Button60_Click_1(sender As System.Object, e As System.EventArgs) Handles Button60.Click
+    Private Sub Button60_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button60.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(16)
         conector.Close()
         TextBox30.Text = ("")
@@ -1572,12 +1572,12 @@ Public Class matricula
         TextBox32.Enabled = False
         TextBox33.Enabled = False
         TextBox34.Enabled = False
-       
+
 
         Button62.Visible = False
     End Sub
 
-    Private Sub Button62_Click_1(sender As System.Object, e As System.EventArgs) Handles Button62.Click
+    Private Sub Button62_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button62.Click
         Try
             Dim cadena As String
             cadena = String.Format("UPDATE alumno SET estado = ' inactivo '  WHERE rut_alumno = '" & TextBox30.Text & "'")
@@ -1591,13 +1591,13 @@ Public Class matricula
             TextBox32.Text = ""
             TextBox33.Text = ""
             TextBox34.Text = ""
-           
+
         Catch ex As Exception
             conector.Close()
         End Try
     End Sub
 
-    Private Sub Button61_Click_2(sender As System.Object, e As System.EventArgs) Handles Button61.Click
+    Private Sub Button61_Click_2(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button61.Click
         Try
             conector.Open()
             Dim qry As String = "select alumno.rut_alumno, alumno.nombres,alumno.apellidos,alumno.fecha_nacimiento from alumno where alumno.rut_alumno='" & TextBox30.Text & "' and alumno.estado= 'activo' "
@@ -1609,7 +1609,7 @@ Public Class matricula
                 TextBox33.Text = dr("apellidos")
                 TextBox34.Text = dr("fecha_nacimiento")
 
-                
+
 
                 conector.Close()
                 Button62.Visible = True
@@ -1624,7 +1624,7 @@ Public Class matricula
         End Try
     End Sub
 
-    Private Sub Button63_Click(sender As System.Object, e As System.EventArgs) Handles Button63.Click
+    Private Sub Button63_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button63.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(0)
         conector.Close()
         matriculas_activas()
@@ -1642,7 +1642,7 @@ Public Class matricula
 
     End Sub
 
-    Private Sub Button64_Click(sender As System.Object, e As System.EventArgs) Handles Button64.Click
+    Private Sub Button64_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button64.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(1)
         conector.Close()
         TextBox1.Enabled = True
@@ -1677,15 +1677,15 @@ Public Class matricula
         TextBox30.Enabled = True
     End Sub
 
-    Private Sub Button66_Click(sender As System.Object, e As System.EventArgs) Handles Button66.Click
+    Private Sub Button66_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button66.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(0)
         conector.Close()
     End Sub
 
-    Private Sub Button65_Click(sender As System.Object, e As System.EventArgs) Handles Button65.Click
+    Private Sub Button65_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button65.Click
         conector.Close()
 
-       
+
         Try
             rut_pdf_alumno = TextBox28.Text
             conector.Open()
@@ -1759,7 +1759,7 @@ Public Class matricula
         End If
 
 
-   
+
     End Sub
     Private Sub TextBox2_KeyPress(ByVal sender As Object, _
                              ByVal e As System.Windows.Forms.KeyPressEventArgs) _
@@ -1774,7 +1774,7 @@ Public Class matricula
             e.Handled = True
         End If
     End Sub
- 
+
 
 
 
@@ -1859,14 +1859,14 @@ Public Class matricula
         End If
     End Sub
 
-    Private Sub TextBox11_TextChanged(sender As System.Object, e As System.EventArgs) Handles TextBox11.TextChanged
+    Private Sub TextBox11_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox11.TextChanged
         If TextBox11.TextLength = 8 Then TextBox11.Text = ValidaRut(TextBox11.Text)
         conector.Close()
     End Sub
 
 
-    Private Sub Button13_Click(sender As System.Object, e As System.EventArgs) Handles Button13.Click
-        TextBox26.Text = inicio.nomUsuario
+    Private Sub Button13_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button13.Click
+        TextBox26.Text = inicio1.nomUsuario
         TabControl1.SelectedTab = TabControl1.TabPages.Item(17)
 
         TextBox41.Text = ("")
@@ -1906,7 +1906,7 @@ Public Class matricula
         End If
     End Function
 
-    Private Sub Button7_Click_1(sender As System.Object, e As System.EventArgs) Handles Button7.Click
+    Private Sub Button7_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
         conector.Close()
         Try
             rut_pdf_alumno = TextBox41.Text
@@ -1969,35 +1969,35 @@ Public Class matricula
 
     End Sub
 
-    Private Sub Button67_Click(sender As System.Object, e As System.EventArgs) Handles Button67.Click
+    Private Sub Button67_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button67.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(0)
         conector.Close()
     End Sub
 
-    Private Sub TextBox28_TextChanged(sender As System.Object, e As System.EventArgs) Handles TextBox28.TextChanged
+    Private Sub TextBox28_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox28.TextChanged
         conector.Close()
     End Sub
 
-    Private Sub Button19_Click(sender As System.Object, e As System.EventArgs) Handles Button19.Click
+    Private Sub Button19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button19.Click
         TabControl1.SelectedTab = TabControl1.TabPages.Item(3)
-        TextBox26.Text = inicio.nomUsuario
+        TextBox26.Text = inicio1.nomUsuario
         conector.Close()
     End Sub
 
-    Private Sub Button22_Click(sender As System.Object, e As System.EventArgs) Handles Button22.Click
-        TextBox26.Text = inicio.nomUsuario
+    Private Sub Button22_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button22.Click
+        TextBox26.Text = inicio1.nomUsuario
         conector.Close()
         TabControl1.SelectedTab = TabControl1.TabPages.Item(1)
     End Sub
 
-    Private Sub Button21_Click(sender As System.Object, e As System.EventArgs) Handles Button21.Click
-        TextBox26.Text = inicio.nomUsuario
+    Private Sub Button21_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button21.Click
+        TextBox26.Text = inicio1.nomUsuario
         TabControl1.SelectedTab = TabControl1.TabPages.Item(2)
         conector.Close()
     End Sub
 
-    Private Sub Button20_Click(sender As System.Object, e As System.EventArgs) Handles Button20.Click
-        TextBox26.Text = inicio.nomUsuario
+    Private Sub Button20_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button20.Click
+        TextBox26.Text = inicio1.nomUsuario
         TabControl1.SelectedTab = TabControl1.TabPages.Item(3)
         conector.Close()
     End Sub

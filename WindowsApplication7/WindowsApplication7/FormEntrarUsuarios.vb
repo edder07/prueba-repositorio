@@ -39,13 +39,13 @@ Public Class FormEntrarUsuarios
         conector.Close()
         conector.Close()
         If MsgBox("¿ Seguro que desea salir ?", vbQuestion + vbYesNo, "Pregunta") = vbYes Then
-            inicio.Enabled = True
-            inicio.Show()
+            inicio1.Enabled = True
+            inicio1.Show()
             Me.Hide()
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         conector.Close()
         Try
             conector.Open()
@@ -58,7 +58,7 @@ Public Class FormEntrarUsuarios
             If dr.Read() Then
                 FormMenuUsuario.Show()
                 Me.Hide()
-                inicio.Hide()
+                inicio1.Hide()
 
                 conector.Close()
 
