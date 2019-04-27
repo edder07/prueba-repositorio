@@ -182,6 +182,7 @@
   <ItemGroup>
     <Content Include="descarga.ico" />
     <Content Include="iconoEjecutar.ico" />
+    <None Include="Resources\boton-de-minimizar.png" />
     <None Include="Resources\icon.png" />
     <None Include="Resourses\1.png" />
   </ItemGroup>

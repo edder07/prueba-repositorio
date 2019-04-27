@@ -52,8 +52,8 @@ Public Class FormMenuUsuario
         inicio1.Enabled = True
         inicio1.Show()
         Me.Hide()
-        FormEntrarUsuarios.TextBox1.Text = ""
-        FormEntrarUsuarios.TextBox2.Text = ""
+        FormEntrarUsuarios.txtuser.Text = ""
+        FormEntrarUsuarios.txtpass.Text = ""
 
     End Sub
 
