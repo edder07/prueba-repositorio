@@ -116,6 +116,7 @@
     <Compile Include="matricula.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="datos_conn.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

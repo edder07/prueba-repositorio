@@ -43,12 +43,15 @@ Public Class matricula
 
 
 
-    Dim ipServidor As String = "192.168.1.55"
-    Dim claveBD As String
-    Dim servidorSQL As String
-    Dim basededatos As String = "matriculas_ll"
-    Dim usuarioBD As String = "servidorbdd"
+    Dim ipServidor As String = datos_conn.getservidor()
+    Dim puerto As String = datos_conn.getpuerto()
+    Dim claveBD As String = datos_conn.getpass()
+    Dim basededatos As String = datos_conn.getbd()
+    Dim usuarioBD As String = datos_conn.getuser()
     Dim strcon As String
+    Public dreader As SqlDataReader
+    Dim conector As New SqlConnection("server=" + ipServidor + "  ;user='" + usuarioBD + "';password= '" + claveBD + "' ; database=" + basededatos + "")
+
 
     Dim cmd As OleDbDataAdapter
     Dim cnn As OleDbConnection
@@ -57,8 +60,7 @@ Public Class matricula
 
 
 
-    Public dreader As SqlDataReader
-    Dim conector As New SqlConnection("server= 192.168.1.55,1433 ;user='servidorbdd';password= '1234321' ; database=matriculas_ll")
+    
 
     'ARRASTRAR FORMULARIO
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
@@ -95,9 +97,8 @@ Public Class matricula
         matriculas_total()
 
 
-        claveBD = "1234321"
-        servidorSQL = "192.168.1.55"
-        strcon = "Provider=SQLOLEDB.1;Password=" & claveBD & ";Persist Security Info=True;User ID=" & usuarioBD & ";Initial Catalog=" & basededatos & ";Data Source=" & servidorSQL & ""
+       
+        strcon = "Provider=SQLOLEDB.1;Password=" & claveBD & ";Persist Security Info=True;User ID=" & usuarioBD & ";Initial Catalog=" & basededatos & ";Data Source=" & servidor & ""
 
         conector.Close()
         Me.Location = Screen.PrimaryScreen.WorkingArea.Location
@@ -2285,4 +2286,7 @@ Public Class matricula
         TextBox37.SelectionStart = TextBox37.TextLength + 1
     End Sub
 
+    Private Sub TabPage1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TabPage1.Click
+
+    End Sub
 End Class

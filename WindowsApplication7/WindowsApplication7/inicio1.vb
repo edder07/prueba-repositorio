@@ -2,13 +2,16 @@
 Imports System.Data.SqlClient
 
 Public Class inicio1
-    Public nomUsuario As String
-    Dim ipServidor As String = "192.168.1.55"
-    Dim claveBD As String
-    Dim servidorSQL As String
-    Dim basededatos As String = "matriculas_ll"
-    Dim usuarioBD As String = "servidorbdd"
+    Dim ipServidor As String = datos_conn.getservidor()
+    Dim puerto As String = datos_conn.getpuerto()
+    Dim claveBD As String = datos_conn.getpass()
+    Dim basededatos As String = datos_conn.getbd()
+    Dim usuarioBD As String = datos_conn.getuser()
+
     Dim strcon As String
+    Public dreader As SqlDataReader
+    Public nomUsuario As String
+    Dim conector As New SqlConnection("server=" + ipServidor + "  ;user='" + usuarioBD + "';password= '" + claveBD + "' ; database=" + basededatos + "")
 
 
     Dim dt As DataTable
@@ -16,8 +19,6 @@ Public Class inicio1
 
 
 
-    Public dreader As SqlDataReader
-    Dim conector As New SqlConnection("server=192.168.1.55,1433  ;user='servidorbdd';password= '1234321' ; database=matriculas_ll")
 
 
     'ARRASTRAR FORMULARIO
@@ -73,9 +74,8 @@ Public Class inicio1
 
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        claveBD = "1234321"
-        servidorSQL = "192.168.1.55"
-        strcon = "Provider=SQLOLEDB.1;Password=" & claveBD & ";Persist Security Info=True;User ID=" & usuarioBD & ";Initial Catalog=" & basededatos & ";Data Source=" & servidorSQL & ""
+        
+        strcon = "Provider=SQLOLEDB.1;Password=" & claveBD & ";Persist Security Info=True;User ID=" & usuarioBD & ";Initial Catalog=" & basededatos & ";Data Source=" & servidor & ""
 
 
         conector.Close()

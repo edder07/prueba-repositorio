@@ -1,14 +1,16 @@
 ﻿Imports System.Runtime.InteropServices
 Imports System.Data.SqlClient
 Public Class FormMenuUsuario
-    Public nomUsuario As String
-    Public nombre_del_usuario_mod As String
-    Dim ipServidor As String = "192.168.1.55"
-    Dim claveBD As String
-    Dim servidorSQL As String
-    Dim basededatos As String = "matriculas_ll"
-    Dim usuarioBD As String = "servidorbdd"
+    Dim ipServidor As String = datos_conn.getservidor()
+    Dim puerto As String = datos_conn.getpuerto()
+    Dim claveBD As String = datos_conn.getpass()
+    Dim basededatos As String = datos_conn.getbd()
+    Dim usuarioBD As String = datos_conn.getuser()
     Dim strcon As String
+    Public dreader As SqlDataReader
+    Dim conector As New SqlConnection("server=" + ipServidor + "  ;user='" + usuarioBD + "';password= '" + claveBD + "' ; database=" + basededatos + "")
+
+    Public nombre_del_usuario_mod As String
 
 
     Dim dt As DataTable
@@ -16,8 +18,8 @@ Public Class FormMenuUsuario
 
 
 
-    Public dreader As SqlDataReader
-    Dim conector As New SqlConnection("server=192.168.1.55,1433  ;user='servidorbdd';password= '1234321' ; database=matriculas_ll")
+
+
 
 
 
@@ -120,9 +122,8 @@ Public Class FormMenuUsuario
     End Sub
 
     Private Sub FormMenuUsuario_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        claveBD = "1234321"
-        servidorSQL = "192.168.1.55"
-        strcon = "Provider=SQLOLEDB.1;Password=" & claveBD & ";Persist Security Info=True;User ID=" & usuarioBD & ";Initial Catalog=" & basededatos & ";Data Source=" & servidorSQL & ""
+        
+        strcon = "Provider=SQLOLEDB.1;Password=" & claveBD & ";Persist Security Info=True;User ID=" & usuarioBD & ";Initial Catalog=" & basededatos & ";Data Source=" & servidor & ""
 
 
         conector.Close()
@@ -227,5 +228,9 @@ Public Class FormMenuUsuario
         TextBox4.Text = ""
         ComboBox1.Text = ""
         ComboBox2.Text = ""
+    End Sub
+
+    Private Sub TabPage1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TabPage1.Click
+
     End Sub
 End Class
